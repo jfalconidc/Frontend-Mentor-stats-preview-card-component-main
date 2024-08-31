@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
   <style>
     .attribution { font-size: 11px; text-align: center; color: white;}
@@ -14,27 +17,30 @@
 </head>
 <body>
   <div class="container">
-    <div class="content1">
-      <h1>Get insights that help your business grow.</h1>
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-        experience, and overall efficiency.
-      </p>
-      <div>
-        <p>10k+</p>
-        <p>companies</p>
-      </div>
-      <div>
-        <p>314</p>
-        <p>templates</p>
-      </div>
-      <div>
-        <p>12m+</p>
-        <p>queries</p>
+      <div class="content1">
+        <div class="info">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p id="discov">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.
+          </p>
+          <div class="indics">
+            <div class="indic">
+              <p class="number">10k+</p>
+              <p class="desc">companies</p>
+            </div>
+            <div class="indic">
+              <p class="number">314</p>
+              <p class="desc">templates</p>
+            </div>
+            <div class="indic">
+              <p class="number" id="plus">12m+</p>
+              <p class="desc">queries</p>
+            </div>
+          </div>
       </div>
     </div>
     <div class="content2">
-      <img src="/images/image-header-desktop.jpg">
-    </div>  
+    </div>    
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
